@@ -110,20 +110,25 @@
     </header>
 
     <main class="main">
-  <section class="menu-sections" aria-label="menu sections" style="padding: 18px; border-right: 1px solid rgba(255,255,255,0.1);">
-    <button class="section-btn" data-section="sides">SIDES</button>
-    <button class="section-btn" data-section="beef">BEEF</button>
-    <button class="section-btn" data-section="drinks">DRINKS</button>
-  </section>
+      <section class="menu-card" aria-label="menu">
 
-  <section class="menu-items" aria-label="menu items" style="padding: 18px; overflow-y: auto;">
-    <!-- menu items for selected section will appear here -->
-  </section>
+        <div class="section" id="sides">
+          <h2>SIDES</h2>
+          <div class="items" id="sidesList"></div>
+        </div>
 
-  <aside class="cart" aria-label="cart">
-    <!-- Your existing cart code stays here -->
-  </aside>
-</main>
+        <div class="section" id="beef">
+          <h2>BEEF</h2>
+          <div class="items" id="beefList"></div>
+        </div>
+
+        <div class="section" id="drinks">
+          <h2>DRINKS</h2>
+          <div class="items" id="drinksList"></div>
+        </div>
+
+      </section>
+
       <aside class="cart" aria-label="cart">
         <h3>Your Order</h3>
         <div class="cart-list" id="cartList">
